@@ -165,7 +165,6 @@
 		    return false;
 		});
 
-
 	};
 
 	// Reflect scrolling in navigation
