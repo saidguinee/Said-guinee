@@ -83,7 +83,7 @@ div .Logo {
 .social {
   position: absolute;
   left: 85px;
-  bottom: -20px;   /*---------- ---------------------------------------------*/
+  bottom: 20px; /* Changement de -20px à 20px */
   display: flex;
 }
 
@@ -163,14 +163,15 @@ figure figcaption {
 
 /* Styles pour l'image de l'auteur */
 #colorlib-aside .author-img {
-  width: 150px;
+  width: 130px;
   height: 150px;
-  margin: 0 auto;
+  margin: -20px auto 30px; /* Changement de margin-top à -20px */
   margin-bottom: 30px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+
 }
 
 /* Styles pour la position de l'auteur */
@@ -179,16 +180,18 @@ figure figcaption {
   margin-bottom: 2em;
   font-size: 12px;
   text-transform: uppercase;
+  transform: translateY(-15px); /* Ou la valeur que vous avez utilisée pour le nom */
 }
 
 /* Styles pour le logo de couleurlib */
 #colorlib-aside #colorlib-logo {
   text-align: right;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   margin-bottom: .5em;
   display: block;
   width: 100%;
+  transform: translateY(-17px); /* Déplacer vers le haut de 20px */
 }
 
 #colorlib-aside #colorlib-logo a {
@@ -202,6 +205,11 @@ figure figcaption {
 #colorlib-aside #colorlib-main-menu {
   display: block;
   width: 100%;
+}
+
+#colorlib-main-menu {
+  position: relative; /* Ou absolute, selon votre structure HTML */
+  top: -23px; /* Ajustez la valeur pour déplacer le bloc vers le haut */
 }
 
 #colorlib-aside #colorlib-main-menu .collapse {
@@ -324,6 +332,7 @@ figure figcaption {
   display: block;
 }
 
+
 #colorlib-aside .colorlib-footer ul {
   padding: 0;
   margin: 0;
@@ -411,7 +420,7 @@ figure figcaption {
 @media screen and (max-width: 768px) {
   #colorlib-hero .flexslider .flex-control-nav {
     right: 20px;
-    top: 100px;
+    top: 1000px;
   }
 }
 
@@ -470,7 +479,7 @@ figure figcaption {
 
 #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
   margin-bottom: 10px;
-  font-size: 45px;
+  font-size: 27px;
   line-height: 1.3;
   font-weight: 600;
    /*----------------------------------------------------------------------------------------*/;
