@@ -69,8 +69,8 @@ div .Logo span{
 div .Logo {																
   color: #7a0d03;
   position: absolute;
-  top: -3px;
-  left: 4px;
+  top: 598px;
+  transform: translate(-50%, -50%);
   text-decoration: none;
   font-weight: 1000;
   text-shadow: rgba(38, 3, 3, 0.7);
@@ -381,14 +381,8 @@ figure figcaption {
 }
 
 /* Styles pour le héros de couleurlib */
+/*----------------------------------------------------------------------------------------*/
 
-#colorlib-hero .flexslider .slides li {
-  background-repeat: no-repeat;
-  background-size: center;
-  background-position: bottom center;
-  min-height: 400px;
-  position: relative;
-}
 
 #colorlib-hero .flexslider {
   border: none;
@@ -432,6 +426,8 @@ figure figcaption {
   position: relative;
 }
 
+
+
 /*----------------------------------------------------------------------------------------*/
 
 #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
@@ -465,9 +461,15 @@ figure figcaption {
             color: #000;
             border: 1px solid #000;
             background: transparent !important; }
-        
+/*----------------------------------------------------------------------------------------*/        
+#colorlib-hero .flexslider .slides li {
 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right; /* This moves the image to the right while keeping it centered vertically */
+}
 
+/*----------------------------------------------------------------------------------------*/
               
 body.offcanvas {
   overflow-x: hidden; }
